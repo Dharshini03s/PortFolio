@@ -1,0 +1,486 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(234, 224, 224);
+}
+.head{
+    /* margin-top: 25px; */
+    position: fixed;
+    width: 100%;
+    background-color: #121824;
+    z-index: 1;
+    border-bottom: 3px solid yellow;
+} 
+.head .tag1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.head .tag1 .logo{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.head .tag1 .nav-bar nav{
+    justify-content:space-between;
+
+}
+.head .tag1 .nav-bar nav a{
+   margin-left: 50px;
+   font-size: large;
+   font-weight: bold;
+   text-decoration: none;
+   color: rgb(5, 1, 19);
+   color: white;
+}
+.head .tag1 .nav-bar nav a:hover{
+    color: yellow;
+}
+.head .tag1 .search-box input{
+    position: relative;
+    height: 30px;
+    padding: 10px;
+}
+.head .tag1 .search-box ion-icon{
+    position: absolute;
+    right: 120px;
+    top: 45px;
+    font-size: 20px;
+  
+}
+.container{
+    padding-top: 100px;
+   background-color: #121824;
+   display: flex;
+   justify-content:space-around;
+   position: relative;
+}
+.container .details{
+    margin-top: 250px;
+    margin-left: 100px;
+    font-size: 30px;
+    color: white;
+    /* background-color: aqua; */
+    width: 400px;
+    height: 200px;
+}
+.container .details button{
+   margin-top: 30px;
+   height: 30px;
+   width: 100px;
+   border-radius: 40px;
+   border-color: rgb(255, 225, 0);
+   font-weight: bold;
+
+}
+.container .photo{
+    display: flex;
+    opacity: 0.9;
+    /* padding-right: 50px; */  
+}
+.about{
+    position: absolute;
+    top: 100%;
+    width: 40%;
+    margin-left: 120px;
+    color: rgb(255, 255, 255);
+    padding-top: 200px;
+}
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.about h2:hover{
+    color:yellow
+}
+.about p{
+    font-size: 17px;  
+}
+.about p span{
+    margin-right: 50px;
+}
+.education{
+   background-color: #121824;
+   padding-top: 250px;
+   color: white;
+}
+.education h2{
+    margin-left: 120px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.education h2:hover{
+    color: yellow;
+}
+.education h3{
+    margin-left: 180px;
+    width: 500px;
+    padding-top:20px
+    /* background-color: aqua; */
+}
+.education p{
+    margin-top: 10px;
+    margin-left:180px ;
+    font-size: 17px; 
+
+}
+.education h3 .s1{
+    margin-left: 100px;
+}
+.education h3 .s2{
+    margin-left: 330px;
+}
+.education h3 .s3{
+    margin-left: 320px;
+ }
+.skills{
+    background-color: #121824;  
+    display: flex;
+    padding-top: 30px;
+    height: 450px;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.skills h2{ 
+    color: white;
+    font-size: 30px;
+    margin-left: 120px;
+    padding-top: 50px;
+}
+.skills h2:hover{
+    color: yellow;
+}
+.box{
+    height: 150px;
+    width: 80px;
+    margin-top: 150px;
+    margin-right: 50px;
+    flex:1;
+    aspect-ratio: 1/1.5;
+    cursor: pointer;
+    pointer-events: auto;
+    padding-right: 50px;
+    /* background-color: aliceblue; */
+    -webkit-box-reflect: below 0px
+    linear-gradient(transparent,rgba(0,0,0,0.15));
+    transition: 0.4s;
+}
+.box img{
+    display: block;
+    width: 80%;
+    height: 100%;
+    aspect-ratio: 1/1.5;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.project{
+    background-color: #121824;
+    color: white;
+    padding-top: 50px;
+}
+.project h2{
+    padding-top: 60px;
+    margin-left: 120px;
+    font-size: 30px;
+    border-bottom: 3px solid yellow;
+}
+.project h2:hover{
+    color: yellow;
+}
+.project h3{
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: 25px;
+}
+.project h4{
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: 20px;
+}
+.project p{
+    margin-top: 10px;
+    margin-left: 200px;
+    width:80%;
+    font-size: 17px;
+}
+.project .bold{
+    font-size: 15px;
+    font-weight: bold;
+}
+.project p .space{
+    margin-right: 50px;
+}
+
+.project img{
+    margin-top: 20px;
+    margin-left: 250px;
+    width:80%;
+    height: 50%;
+}
+.intern{
+    background-color: #121824;
+    color: white;
+}
+.intern h2{
+    padding-top: 100px;
+    margin-left: 100px;
+    font-size: 30px;
+    border-bottom: 3px solid yellow;
+}
+.intern h2:hover{
+    color: yellow;
+}
+.intern h3{
+    margin-left: 200px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.intern .p1{
+    margin-left: 200px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.intern h4{
+    margin-left: 200px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.intern p .space{
+    margin-right: 50px;
+}
+.intern .bold{
+    font-size: 15px;
+    font-weight: bold;
+}
+.intern p{
+    margin-top: 10px;
+    margin-left: 200px;
+    width: 80%;
+    font-size: 17px;
+}
+.paper-presentation{
+    background-color: #121824;
+    color: white;
+}
+.paper-presentation h2{
+    margin-left: 100px;
+    text-decoration: underline;
+    text-decoration-color:rgb(242, 255, 0);
+    padding-top: 60px;
+    font-size: 30px;
+}
+.paper-presentation h3{
+    margin-left: 200px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.paper-presentation .p2{
+    margin-top: 10px;
+    margin-left: 200px;
+    font-size: 17px;
+}
+.paper-presentation h4{
+    margin-top: 10px;
+    margin-left: 200px;
+    font-size: 20px;
+}
+.paper-presentation p{
+    margin-top: 10px;
+    margin-left: 200px;
+    width: 80%;
+    font-size: 17px;
+}
+.paper-presentation p span{
+    margin-right: 50px;
+    
+}
+.seminar{
+    background-color: #121824;
+    color: white;
+}
+.seminar h2{
+    margin-left: 100px;
+    padding-top: 60px;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color:rgb(242, 255, 0);
+}
+.seminar h3{
+    margin-left: 200px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.seminar .p3{
+    margin-left: 200px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.seminar h4{
+    margin-left: 200px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.seminar p{
+    margin-left: 200px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.seminar p span{
+    margin-right: 50px;
+}
+.workshop{
+    background-color: #121824;
+    color: white;
+}
+.workshop h2{
+    margin-left: 100px;
+    padding-top: 60px;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color:rgb(242, 255, 0);
+}
+.workshop h3{
+    margin-left: 200px;
+   margin-top: 20px;
+   font-size: 25px;
+}
+.workshop .p4{
+    margin-left: 200px;
+    margin-top: 10px;
+    font-size: 17px;
+
+}
+.workshop h4{
+    margin-left: 200px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.workshop p{
+    margin-left: 200px;
+    margin-top: 10px;
+    font-size: 17px;
+    
+}
+.workshop p span{
+    margin-right: 50px;
+}
+.contact1{
+    background-color: hsl(220, 33%, 11%);
+    color: white;
+    padding:50px ;
+}
+.contact1 h2{
+    /* margin-left: 100px; */
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    border-bottom: 3px solid yellow;
+    border-top: 3px solid yellow;
+}
+/* .contact1 img{
+    margin-top: 30px;
+    margin-left: 45%;
+} */
+.contact1 h3{
+    margin-top: 30px;
+    margin-left: 45%;
+}
+.email{
+    background-color: #121824;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.email a{
+    background-color: #121824;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.email a:hover{
+    color: yellow;
+}
+.phone{
+    background-color: #121824;
+    color: white;
+    display: flex;
+    padding-left: 42.5%;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.phone a{
+    background-color: #121824;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.phone a:hover{
+    color: yellow;
+}
+.location{
+    background-color: #121824;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.location p{
+    background-color: #121824;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.location p:hover{
+    color: yellow;
+}
+.linkpage{
+    background-color: #121824;
+    height: 100px;
+    padding-top: 30px; 
+    padding-left: 45%;  
+}
+.linkpage a{
+    text-decoration: none;
+}
+.linkpage  .linkedin{
+    padding:8px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: white;
+    font-size: 100%;
+  }  
+.linkpage  .github{
+    padding:8px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+    font-size: 100%;
+}
+.linkpage  .insta{
+    padding:8px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+    font-size: 100%;
+}    
+.linkpage  .mail{
+    padding:8px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 100%;
+}    
